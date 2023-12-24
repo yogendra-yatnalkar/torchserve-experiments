@@ -1,3 +1,9 @@
+# dont save .pt files and model store of torchserve 
+**/*.pt
+logs/
+**/logs/
+**/*.mar
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
