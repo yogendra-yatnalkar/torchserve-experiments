@@ -26,3 +26,22 @@ curl http://localhost:8081/models/vit_l_16
 ```
 curl http://127.0.0.1:8080/predictions/vit_l_16 -T 0.png
 ```
+
+5. ### Start Locust server and perform load testing:
+
+- Type on command line:
+  ```
+  locust
+  ```
+
+- Head over to the following url:
+  ```
+  localhost:8089
+  ```
+
+  Note: If you are using ec2 instance like me:
+    - First, add inbound rule to access 8089 port from your ip address
+    - Second, head over to the following url: 
+  ```
+  {public_ip_adress_of_ec2_or_similar_cloud_instance}:8089
+  ```
